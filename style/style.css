@@ -1,0 +1,137 @@
+html{
+    scroll-behavior: smooth;
+}
+/*Pseudoclases*/
+
+.form-pseudoclases *:required {
+    border-color:yellow;
+}
+.form-pseudoclases *:valid{
+    border-color:green;
+}
+.form-pseudoclases *:invalid{
+    border-color:red;
+}
+
+.form-pseudoclases *:focus{
+    background-color:aqua;
+}
+
+.form-pseudoclases *:disabled{
+    background-color: rgb(25, 178, 238);
+}
+
+.menu-pseudoclases a:visited{ 
+    color:olive;
+}
+
+.menu-pseudoclases a:hover{
+    color:orange;
+}
+.p-pseudoclases:hover{
+    font-size: 20px;
+}
+
+#temario-css:target{
+    background-color:lemonchiffon;
+}
+
+.lista-pseudoclases li:first-child{
+    color:green;
+}
+
+.lista-pseudoclases li:last-child{
+    color:violet;
+}
+
+.lista-pseudoclases li:nth-child(3n+1){
+    font-weight: bold;
+}
+
+.lista-pseudoclases li:nth-child(even){
+    background-color:green;
+}
+
+.lista-pseudoclases li:nth-child(odd){
+    background-color: aqua;
+}
+
+.articulo-pseudoclases p:first-of-type{
+    color:red;
+}
+
+.articulo-pseudoclases p:last-of-type{
+    color:blue;
+}
+
+.articulo-pseudoclases p:nth-of-type(2) {
+    color:green;
+}
+
+.articulo-pseudoclases *:not(p){
+    background-color:beige;
+}
+
+/*Pseudoelementos*/
+.saga-zoro::before{
+    content:"😎";
+}
+
+.saga-zoro::after{
+    content:"🍕";
+}
+.saga-precio::before{
+    content:"$";
+}
+.saga-precio::after{
+    content:"USD";
+}
+
+
+.p-pseudoelementos::first-letter{
+    font-weight: bold;
+    font-size:33px;
+}
+.p-pseudoelementos::first-line{
+    color:coral;
+}
+
+.p-pseudoelementos::selection{
+    color:coral;
+    background:black;
+}
+
+.input-pseudoelementos::placeholder{
+    color:green;
+}
+
+/* Agrupar selectores*/
+
+.form-agrupar-selectores input[type="text"],.form-agrupar-selectores input[type="email"],.form-agrupar-selectores textarea{
+    border-color:rgb(216, 116, 116);
+    border-width: 2px;
+    border-style:dashed;
+    background-color:aquamarine;
+    font-size:20px;
+    display:block;
+    width:300px;
+}
+
+/*Algoritmo de CSS
+    1) La cascada: mecanismo en que el navegador aplica los estilos...toma en cuenta:
+
+        #Origen del código
+            -El user Agen(Estilos por defecto del navegador)
+            -Personalizacion del usuario
+            -Los estilos del autor
+
+        #La especificad del selector: Es el peso que tiene un selector cuando hay conflicto de estilos.
+            Etiquetas y pseudoelementos ........0,0,0,1
+            Clases,atributos y pseudoclases ....0,0,1,0
+            identificadores.....................0,1,0,0
+            Estilos en línea....................1,0,0,0
+            !important.............Rompe la especifidad
+            
+        #Orden de aparicion
+
+*/
