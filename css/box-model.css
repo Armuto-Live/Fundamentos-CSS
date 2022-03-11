@@ -1,0 +1,54 @@
+/* propiedades de un modelo de caja
+    1. El contenido(content), tomando en cuenta las dimensiones de ancho y alto(width y height)
+    2. El border (border)
+    3. El relleno (padding)
+    4. El margen (margin)
+    
+    Dentro del modelo de caja hay cuatro lados
+        1.Arriba(top)
+        2.Derecha(rigth)
+        3.Abajo(bottom)
+        4.Izquierda(left)
+*/
+body{
+    margin:0;
+}
+h1{
+    width: 400px;
+    height:200px;
+
+    /*Propiedades de tipo shorthand*/
+    border-color: red;
+    border-width: thin; /*thin- 1px, medium-3px, thick-5px*/
+    border-style:solid;
+    border:2px dashed blue;
+}
+
+.caja-uno,.caja-dos{
+    background-color:chocolate;
+    border: medium solid orange;
+    padding:5px;
+    margin:20px;
+}
+
+/*
+Caja de linea
+    -Ocupan el espacio necesario para mostrar su contenido
+    -No tienen dimensiones modificables(alto,ancho);
+    -Permiten otros elementos a su lados
+    -Padding y margin solo empujan a elementos adyacentes en horizontal. Nunca en Vertical.
+Caja de Bloque
+    -Ocupan todo el ancho disponible, por ende genera saltos de linea.
+    -Tienen dimensiones modificables(alto, ancho)
+    -No permiten otros elementos a su lado(A pesar de especificar el ancho, siguen ocupando todo el espacio disponible)
+
+*/
+
+.caja-linea,.caja-bloque{
+    background-color: aqua;
+    width:500px;
+    height:200px;
+    border:medium solid black;
+    padding:20px;
+    margin:40px;
+}
