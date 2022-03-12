@@ -52,3 +52,109 @@ Caja de Bloque
     padding:20px;
     margin:40px;
 }
+
+
+.caja-bloque{
+    margin: 30px;
+    display:inline;
+
+}
+
+.caja-linea{
+    margin:100px;
+    display:block;
+
+}
+
+/*
+Propiedad display
+    1)inline
+    2)block
+    3)inline-block: Se compporta como un elemeno de linea pero acepta modificar las dimensiones de alto y ancho
+    4)none
+    5)table 
+    6)list-item
+    7)flex
+    8)grid 
+*/
+
+.caja-none,.caja-linea-bloque,.caja-hidden{
+    background-color:darkorange;
+    color:white;
+    padding: 0;
+    height: 200px;
+    width: 200px;
+    border: medium solid rgb(255, 14, 14)
+}
+.caja-linea-bloque{
+    display: inline-block;
+}
+.caja-none{
+    display:none;
+}
+.caja-hidden{
+    visibility: hidden;
+}
+
+.overflow{
+    background-color:darkturquoise;
+    width:200px;
+    height:100px;
+    overflow:visible;
+    overflow:hidden;
+    overflow:scroll;
+    overflow:auto;
+}
+
+/* Tamaño de caja*/
+
+.box-sizing-content,.box-sizing-border{
+    background-color:deepskyblue;
+    box-sizing:content-box;
+    width:500px;
+    height:250px;
+    padding:10px;
+    border:thick solid black;
+}
+.box-sizing-border{
+    box-sizing:border-box;
+}
+
+.container-col-3{
+    background:brown;
+    width:600px;
+    height:300px;
+    margin-top:20px;
+}
+.container-col-3 > *{
+    box-sizing:border-box;
+    width:200px;
+    border:thin solid black;
+    padding:10px;
+    float:left;
+}
+
+html{
+    box-sizing:border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+/* Floats*/
+
+.container-float{
+    background:rgb(189, 135, 243);
+}
+
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+.clearfix{
+    clear:both;
+} 
