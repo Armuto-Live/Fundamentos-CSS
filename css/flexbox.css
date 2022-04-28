@@ -34,9 +34,24 @@
        valor por defecto : auto */
     flex: 0 1 auto;
     /*Es un shorthand de las propiedades flex-grow, flex-shrink, flex-basis*/
+
+    /*order:0;*/
+    /* Representa el orden que tendrán los elementos hijos en la caja flexbox
+    Se aceptan valores positivos y negativos
+    Un valor menos siempre ira antes que un mayor*/
+
+    align-self: auto;
+
+    /* Sobreescribe el valor de la propiedad align-items solo para el elemnto hijo especificado
+    stretch | flex-start | flex-end | center | baseiine */
 }
 
 .item:nth-child(2){
     /*flex-grow: 2;*/  
-    flex-shrink: 2;  
+    flex-shrink: 2;
+    order: -1;
+}
+
+.item:nth-child(3){
+    align-self: flex-start;
 }
