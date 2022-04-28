@@ -26,7 +26,7 @@
     flex-grow: 0;
     /* Cuando las cajas flexbox tenga espacio sobrante, es la habilidad o el factor de crecer, valor por defecto es 0, no aceptan valores negativos*/
     flex-shrink: 1;
-    /*Cuando la caja flexbo no tenga un espacio sobrante, es la habilidad o el factor de encogerse, Valor por defecto es 1, no valores negativos*/
+    /*Cuando la caja flexbox no tenga un espacio sobrante, es la habilidad o el factor de encogerse, Valor por defecto es 1, no valores negativos*/
     flex-basis: 100px;
     /* Es el tamaño del elemento hijo dentro de la linea de la caja flexbox
        Si la caja flexbox tiene direcciòn fila, flex-basics representa el width
@@ -48,10 +48,16 @@
 
 .item:nth-child(2){
     /*flex-grow: 2;*/  
-    flex-shrink: 2;
+    flex-shrink: 0;
     order: -1;
 }
 
 .item:nth-child(3){
     align-self: flex-start;
+}
+
+a{
+     text-decoration: none;  
+     color:red;
+     font-size: 3vh;
 }
