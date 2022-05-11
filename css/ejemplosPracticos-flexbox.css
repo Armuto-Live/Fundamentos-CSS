@@ -32,6 +32,24 @@ a{
     list-style-type: none;
 }
 
+.hero-image{
+    min-height: 100vh;
+    background-image: url("https://placeimg.com/1900/1080/animals");
+    background-repeat: no-repeat;
+    color:#fff;
+}
+.hero-image>div{
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0,0,0,.75);
+}
+
+.hero-image h1{
+    font-size: 5vw;
+}
 @media screen and (min-width:1024px){
     .header{
         display:flex;
