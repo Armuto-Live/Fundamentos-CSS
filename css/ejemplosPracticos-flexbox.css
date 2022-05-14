@@ -10,6 +10,10 @@ body{
     min-height: 100vh;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
 main{
     flex-grow: 1;
 }
@@ -62,5 +66,15 @@ a{
 
     .menu li{
         padding: .5rem;
+    }
+    .flex-container{
+        display:flex;
+        align-items: center;
+    }
+    .flex-item{
+        flex:0 0 50%;
+    }
+    .flex-row-reverse{
+        flex-direction: row-reverse;
     }
 }
