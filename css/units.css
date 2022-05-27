@@ -1,3 +1,26 @@
 body{
-    background-color: red;
+    background-color:#215768 ;
 }
+
+/*
+    UNIDADES DE MEDIA
+      1)ABSOLUTAS(su valor no cambia)
+          pc,cm,mm,in,Q
+          pt(1/72in)
+          px(1/96in)
+
+      2)RELATIVAS( su valor es relativo a un contexto)
+          em,rem,ex,ch - al tamaño de la fuente
+            em   - basada en la anchura de la "m" de la fuente del elemento
+            rem  - basada en la anchura de la "m" de la fuente del elemento raíz(htmk)
+            ex   - basada en la anchura de la "x" de la fuente del elemento
+            ch   - basada en la anchura de la "0" de la fuente del elemento
+            %    - al tamaño del contenedor
+          vw,vh,vmin,vmax - al tamaño del viewport
+            vw   - ancho del viewport van de 1 a 100
+            vh   - alto (1 a 100)
+            vmin - entre vw y vh toma el que tenga menor valor
+            vmax - entre vw y vh toma el que tenga menor valor
+
+
+*/
