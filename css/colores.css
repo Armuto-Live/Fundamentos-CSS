@@ -1,0 +1,16 @@
+.color-by-name{
+    background-color: coral;
+    color: rebeccapurple;
+    border: thick solid greenyellow;
+}
+/*RGB*/
+.color-hex{
+    background-color: #00000050;
+    color: rebeccapurple;
+    border: thick solid greenyellow;
+}
+
+.color-transparent-current{
+    background-color: currentColor;
+    color:orangered;
+}
