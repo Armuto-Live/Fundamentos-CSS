@@ -10,7 +10,9 @@
     border: thick solid greenyellow;
 }
 
-.color-transparent-current{
-    background-color: currentColor;
-    color:orangered;
+.opacity{
+    background-color: orchid;
+    color: navy;
+    border: thick solid black;
+    opacity: 0.5;
 }
